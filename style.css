@@ -1,0 +1,137 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+:root {
+    --orange : #F0A500 ;
+    --white : #F9F9F9 ;
+    --gray : #B9B9B9 ;
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.bg-orange {
+    background-color: var(--orange);
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.text-center {
+    text-align: center;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.w-100{
+    width: 100%;
+}
+p , h6 , span{
+    font-size: 15px;
+}
+.heading {
+    color: var(--orange);
+    font-size: 15px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+form {
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 4px;
+}
+.container {
+    min-height: 120vh;
+}
+
+input , button , select{
+    background-color: rgb(241, 238, 238);
+    padding-left: 60px;
+    padding-block: 15px ;
+    border: 1px solid rgb(225, 222, 222);
+    border-radius: 3px;
+    margin-bottom: 14px;
+}
+button , select {
+    padding: 15px;
+    cursor: pointer;
+}
+.gender-birth-wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+.gender-birth-wrapper > div {
+    flex-basis:  50%;
+}
+.birth-box-wrapper input {
+    padding-left: 10px;
+    width: 25% ;
+}
+.gender-btn-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gender-btn-wrapper button {
+    padding-inline: 20px;
+    color: var(--gray);
+}
+.payment-wrapper {
+    margin-top: 30px;
+}
+.method-btn-wrapper button {
+    width: 50%;
+    color: var(--gray);
+}
+.method-btn-wrapper button:first-child{
+    color: var(--white);
+}
+.credentials-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 14px;
+}
+
+.terms-wrapper {
+    margin-top: 30px;
+}
+.terms-wrapper span {
+    color: var(--gray);
+}
+
+@media ( max-width : 576px )
+{
+    .gender-birth-wrapper {
+        flex-direction: column;
+    }
+    .birth-box-wrapper {
+        display: flex;
+        gap: 14px;
+    }
+    .birth-box-wrapper input {
+        flex-grow: 1;
+    }
+    .credentials-wrapper {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}

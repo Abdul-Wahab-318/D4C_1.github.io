@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>D4C Round 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-d0zRd0vzOAMK4tkGxrwL4Vy1lHpbrZP6a/tdt/+n9cDb0LqtaIKJi9Pgm6FX5d84LEs2A+k/zB37jFAb2TJj3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    round 1
+    <div class="container bg-gray flex-center">
+        <form action="">
+            <div class="form-header">
+                <h6 class="heading text-orange">Account</h6>
+                <input type="text" placeholder="Full Name" class="w-100">
+                <input type="text" placeholder="Email Addresses" class="w-100">
+                <input type="password" placeholder="Password" class="w-100">
+            </div>
+            <div class="gender-birth-wrapper">
+                <div>
+                    <h6 class="heading">Date of Birth</h6>
+                    <div class="birth-box-wrapper">
+                        <input type="text" placeholder="DD">
+                        <input type="text" placeholder="MM">
+                        <input type="text" placeholder="YY">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="heading">Gender</h6>
+                    <div class="gender-btn-wrapper">
+                        <button class="text-center">Male</button>
+                        <button class="text-center">Female</button>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-wrapper">
+                <h6 class="heading">Payment Details</h6>
+                <div class="method-btn-wrapper d-flex">
+                    <button class="bg-orange">Credit Card</button>
+                    <button>Paypal</button>
+                </div>
+                <input type="text" placeholder="Card Number" class="w-100">
+                <div class="credentials-wrapper">
+                    <input type="text" placeholder="Card CVC" >
+                    <select name="day" id="day">
+                        <option value="01 jan"> 01 Jan</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="2015"> 2015</option>
+                    </select>
+                </div>
+            </div>
+            <div class="terms-wrapper">
+                <h6 class="heading">Terms and Conditions</h6>
+                <input type="checkbox">
+                <span>I accept the terms and conditions for signing up to this service, and <br> hereby confirm I have read the privacy policy</span>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
